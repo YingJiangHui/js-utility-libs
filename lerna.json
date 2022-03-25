@@ -1,6 +1,21 @@
 {
   "packages": [
-    "packages/*"
+    "image-grayscale-percentage/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "command": {
+    "publish": {
+      "version": {
+        "allowBranch": "master",
+        "includeMergedTags": true
+      },
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  }
 }

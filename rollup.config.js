@@ -1,13 +1,15 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
-export default {
-  input: ['packages/image-grayscale-percentage/lib/image-grayscale-percentage.js','packages/image-grayscale-percentage/lib/xxx.ts'],
+export default [{
+  input: ['packages/image-grayscale-percentage/lib/image-grayscale-percentage.ts'],
   output: [{
-    dir: 'dist/amd',
-    format: 'amd' // broswer
+    dir: './packages/image-grayscale-percentage/dist/umd',
+    format: 'umd', // broswer
+    name: 'aaa'
   },{
-    dir: 'dist/cjs',
-    format: 'cjs' // node
+    dir: './packages/image-grayscale-percentage/dist/cjs',
+    format: 'cjs', // node
+    name: 'ccc'
   }],
   plugins:[nodeResolve(),typescript()]
-};
+}];

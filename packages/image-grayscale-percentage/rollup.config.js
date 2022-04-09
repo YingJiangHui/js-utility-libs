@@ -3,11 +3,11 @@ import typescript from '@rollup/plugin-typescript';
 import babel from 'rollup-plugin-babel';
 
 export default [{
-  input: ['lib/image-grayscale-percentage.ts'],
+  input: ['lib/image-grayscale-percentage.ts','lib/xxx.ts'],
   output: [{
     sourcemap:true,
     dir: 'dist/umd',
-    format: 'umd', // browser & node
+    format: 'cjs', // browser & node
     name: 'aaa'
   }],
   plugins:[nodeResolve(),typescript(),babel({

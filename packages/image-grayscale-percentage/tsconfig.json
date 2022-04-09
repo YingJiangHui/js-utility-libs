@@ -4,5 +4,6 @@
     "declaration": true,
     "declarationDir": "dist/umd",
     "rootDir": "./lib",
+    "jsx": "react"
   }
 }

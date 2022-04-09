@@ -7,6 +7,7 @@ specifiers:
   '@rollup/plugin-typescript': ^8.3.1
   core-js: ^3.21.1
   lerna: ^4.0.0
+  regenerator-runtime: ^0.13.9
   rollup: ^2.70.1
   rollup-plugin-babel: ^4.4.0
   tslib: ^2.3.1
@@ -19,6 +20,7 @@ devDependencies:
   '@rollup/plugin-typescript': registry.npmmirror.com/@rollup/plugin-typescript/8.3.1_8fb0118e9d69f3600cbb8f144f7d456c
   core-js: registry.npmmirror.com/core-js/3.21.1
   lerna: registry.npmmirror.com/lerna/4.0.0
+  regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
   rollup: registry.npmmirror.com/rollup/2.70.1
   rollup-plugin-babel: registry.npmmirror.com/rollup-plugin-babel/4.4.0_@babel+core@7.17.9+rollup@2.70.1
   tslib: registry.npmmirror.com/tslib/2.3.1

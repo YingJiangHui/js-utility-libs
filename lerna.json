@@ -1,6 +1,6 @@
 {
   "packages": [
-    "image-grayscale-percentage/*"
+    "packages/*"
   ],
   "version": "0.0.0",
   "command": {

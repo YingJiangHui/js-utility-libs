@@ -11,7 +11,7 @@ export default [{
     name: 'aaa'
   },
   plugins:[nodeResolve(),typescript(),babel({
-    exclude: 'node_modules/**', // 只编译我们的源代码
+    exclude: 'node_modules/**',
     runtimeHelpers: true,
     sourceMap: true,
     extensions: [".js", ".jsx", ".es6", ".es", ".mjs", ".ts"]

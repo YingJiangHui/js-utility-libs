@@ -6,7 +6,7 @@
   "command": {
     "publish": {
       "version": {
-        "allowBranch": "master",
+        "allowBranch": "main",
         "includeMergedTags": true
       },
       "ignoreChanges": ["ignored-file", "*.md"],

@@ -1,3 +1,8 @@
 const map = new Map()
+type c = string
+const a:c= ';'
 
-export {map}
+module.exports={
+ a,map
+}
+

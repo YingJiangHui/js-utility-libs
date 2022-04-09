@@ -11,9 +11,7 @@ export default [{
     name: 'aaa'
   },
   plugins:[nodeResolve(),typescript(),babel({
-    exclude: 'node_modules/**',
-    runtimeHelpers: true,
-    sourceMap: true,
-    extensions: [".js", ".jsx", ".es6", ".es", ".mjs", ".ts"]
+    exclude: 'node_modules/**', // 不检查node_modules里的文件
+    extensions: [".js", ".jsx", ".es6", ".es", ".mjs", ".ts"] // 哪些文件需要babel transform
   })]
 }];

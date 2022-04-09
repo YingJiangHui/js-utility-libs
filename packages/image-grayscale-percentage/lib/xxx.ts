@@ -1,2 +1,3 @@
-const a = ()=>{}
-export {a}
+const map = new Map()
+
+export {map}

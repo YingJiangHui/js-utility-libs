@@ -1,20 +1,17 @@
 {
   "name": "image-grayscale-percentage-1",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "Jh <473380917@qq.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "dist/umd/image-grayscale-percentage.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/es/image-grayscale-percentage.js",
+  "typings": "dist/es/image-grayscale-percentage.d.ts",
   "files": [
-    "lib"
+    "dist/es"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.org/"
+    "registry": " https://registry.npmjs.org/"
   },
   "scripts": {
     "test": "jest",

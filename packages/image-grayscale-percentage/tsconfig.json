@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist/umd",
+    "declarationDir": "dist/es",
     "rootDir": "./lib",
     "jsx": "react"
   }

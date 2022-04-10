@@ -1,0 +1,1 @@
+export {detectImageGrayscalePercentage} from './detect-image-grayscale-percentage'

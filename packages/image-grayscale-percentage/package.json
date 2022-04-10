@@ -15,6 +15,7 @@
   },
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "rollup -c"
   }
 }

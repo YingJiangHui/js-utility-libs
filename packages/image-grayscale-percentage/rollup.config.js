@@ -2,7 +2,7 @@
 import rollupConfigCommon from '../../rollup.config.common.js'
 
 export default [{
-  input: ['lib/image-grayscale-percentage.ts'],
+  input: ['lib/index.ts'],
   output: [{
     sourcemap:true,
     dir: 'dist/es',

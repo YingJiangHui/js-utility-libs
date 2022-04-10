@@ -15,10 +15,10 @@ const getRandomInt = (min: number,max: number) => {
 };
 
 export class GrayscaleStandardConfig {
-  detectingPointsNum = 1000;
+  numOfInspectionPoints = 1000;
   diff = 5;
-  separatedAreasNumX = 10;
-  separatedAreasNumY = 10;
+  numOfZonesByX = 10;
+  numOfZonesByY = 10;
   paddingRate?: number
   constructor(props?: Partial<GrayscaleStandardConfig>) {
     Object.assign(this,props)
@@ -84,12 +84,12 @@ export const detectImageGrayscalePercentage = async(img: HTMLImageElement, confi
   const canvas = createCanvas();
   const ctx = getCanvasCtxByDrawImage(canvas,img,innerConfig.paddingRate);
   if (!ctx) return 0;
-  const areaDetectingPointNum = innerConfig.detectingPointsNum / (innerConfig.separatedAreasNumX * innerConfig.separatedAreasNumY);
+  const areaDetectingPointNum = innerConfig.numOfInspectionPoints / (innerConfig.numOfZonesByX * innerConfig.numOfZonesByY);
   
-  const grayPointTotalNum =rectPartitionReduce({width:canvas.width,height:canvas.height,numX:innerConfig.detectingPointsNum,numY:innerConfig.detectingPointsNum},
+  const grayPointTotalNum =rectPartitionReduce({width:canvas.width,height:canvas.height,numX:innerConfig.numOfInspectionPoints,numY:innerConfig.numOfInspectionPoints},
     (grayPointNum,{x,y,width,height})=>{
       return grayPointNum + detectAreaGrayscale(ctx,[x,y],[width,height],areaDetectingPointNum,innerConfig.diff)
     },0)
   
-  return grayPointTotalNum / innerConfig.detectingPointsNum;
+  return grayPointTotalNum / innerConfig.numOfInspectionPoints;
 };

@@ -1,12 +1,12 @@
 {
-  "name": "image-grayscale-percentage-1",
-  "version": "0.0.5",
+  "name": "detect-image-grayscale-percentage-1",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "Jh <473380917@qq.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "dist/es/image-grayscale-percentage.js",
-  "typings": "dist/es/image-grayscale-percentage.d.ts",
+  "main": "dist/es/index.js",
+  "typings": "dist/es/index.d.ts",
   "files": [
     "dist/es"
   ],

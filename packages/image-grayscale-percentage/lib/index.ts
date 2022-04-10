@@ -1,1 +1,3 @@
-export {detectImageGrayscalePercentage} from './detect-image-grayscale-percentage'
+import {detectImageGrayscalePercentage} from './detect-image-grayscale-percentage'
+
+export default detectImageGrayscalePercentage

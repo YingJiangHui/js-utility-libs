@@ -1,5 +1,10 @@
 # `detect-image-grayscale-percentage`
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/YingJiangHui/js-utility-libs/tree/main/LICENSE)
+[![npm version](https://badge.fury.io/js/detect-image-grayscale-percentage.svg)](https://badge.fury.io/js/detect-image-grayscale-percentage)
+
+[//]: # ([![CircleCI]&#40;https://circleci.com/gh/YingJiangHui/neat-ui-react/tree/dev.svg?style=svg&#41;]&#40;https://circleci.com/gh/YingJiangHui/neat-ui-react/tree/dev&#41;)
+
 > This library provides one API.Used to detect grayscale percentage for picture.You can use it judgment white and black image.
 
 ## Usage

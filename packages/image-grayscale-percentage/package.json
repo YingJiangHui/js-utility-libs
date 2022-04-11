@@ -1,9 +1,10 @@
 {
   "name": "detect-image-grayscale-percentage-1",
   "version": "0.0.6",
-  "description": "> TODO: description",
+  "description": "You can use it judgment white and black image",
   "author": "Jh <473380917@qq.com>",
-  "homepage": "",
+  "homepage": "https://github.com/YingJiangHui/js-utility-libs/tree/main/packages/image-grayscale-percentage",
+  "repository": "https://github.com/YingJiangHui/js-utility-libs/tree/main/packages/image-grayscale-percentage",
   "license": "MIT",
   "main": "dist/es/index.js",
   "typings": "dist/es/index.d.ts",

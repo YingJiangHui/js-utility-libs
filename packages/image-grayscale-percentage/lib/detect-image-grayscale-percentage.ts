@@ -86,7 +86,7 @@ export const detectImageGrayscalePercentage = async(img: HTMLImageElement, confi
   if (!ctx) return 0;
   const areaDetectingPointNum = innerConfig.numOfInspectionPoints / (innerConfig.numOfZonesByX * innerConfig.numOfZonesByY);
   
-  const grayPointTotalNum =rectPartitionReduce({width:canvas.width,height:canvas.height,numX:innerConfig.numOfInspectionPoints,numY:innerConfig.numOfInspectionPoints},
+  const grayPointTotalNum =rectPartitionReduce({width:canvas.width,height:canvas.height,numX:innerConfig.numOfZonesByX,numY:innerConfig.numOfZonesByY},
     (grayPointNum,{x,y,width,height})=>{
       return grayPointNum + detectAreaGrayscale(ctx,[x,y],[width,height],areaDetectingPointNum,innerConfig.diff)
     },0)
